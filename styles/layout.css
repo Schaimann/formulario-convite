@@ -1,0 +1,56 @@
+#app {
+    display: grid;
+    grid-template-columns: 31.25% 68.75%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    overflow: auto;
+    padding: 5rem;
+
+    & .main-container {
+        background-color: var(--input-base);
+        max-width: 23rem;
+        margin-left: auto;
+    }
+}
+
+aside {
+    padding: 1rem;
+    background-color: var(--shape-background);
+    & .aside-container {
+        max-width: 21rem;
+        position: relative;
+        background-color: var(--input-base);
+        max-width: 24rem;
+        padding: 2rem;
+
+        background-image: url('/images/Background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        min-height: 780px;
+
+
+    & img {
+        width: 45px;
+        height: 48px;
+    }
+
+    & h1 {
+        font-size: 40px;
+        font-family: var(--font-logo);
+        color: var(--pink);
+    }
+    & p {
+        font-family: var(--font-family);
+        font-size: 16px;
+        text-wrap: no-wrap;
+        color: var(--text-heading);
+    }
+
+    }
+}
