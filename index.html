@@ -61,36 +61,36 @@
                             <input type="datetime-local" id="end-event" name="end-event">
                         </div>
 
-                        <div class="local-wrapper">
-                            <label for="local-inner">Tipo</label>
-                            <div class="local-inner">
-                                <div class="radio-local">
+                        <div class="select-wrapper">
+                            <label for="selec-local">Tipo</label>
 
-                                    <label for="in-person">
-                                        <input type="radio" name="in-person" value="in-person" id="in-person">
-                                        <img src="images/svg/building-2.svg" alt="imagem de predio">
-                                        <span>Presencial</span>
-                                    </label>
 
-                                    <label for="online">
-                                        <input type="radio" name="online" value="online" id="online">
-                                        <img src="images/svg/video.svg" alt="imagem de camera">
-                                        <span>Online</span>
-                                    </label>
+                            <div class="option-buttons">
+                                <label class="radio-option">
+                                    <input type="radio" name="selec-local" id="in-person" value="presencial">
+                                    <img src="images/svg/building-2.svg" alt="Presencial">
+                                    <span>Presencial</span>
+                                </label>
 
-                                </div>
+                                <label class="radio-option">
+                                    <input type="radio" name="selec-local" id="online" value="online">
+                                    <img src="images/svg/video.svg" alt="Online">
+                                    <span>Online</span>
+                                </label>
+
                             </div>
-                            <!--Teste!-->
-                            <div class="input-wrapper">
-                                <label for="adress">Local</label>
-                                <input type="text" id="adress" name="adress" placeholder="Link ou endereço">
-                            </div>
+                        </div>
 
-                            <div class="textarea-wrapper">
-                                <label for="description-info">Descrição</label>
-                                <textarea name="description-info" id="description-info" cols="30" rows="5"
-                                    placeholder="Escreva sobre os detalhes do evento"></textarea>
-                            </div>
+                        <div class="input-wrapper">
+                            <label for="adress">Local</label>
+                            <input type="text" id="adress" name="adress" placeholder="Link ou endereço">
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="description-info">Descrição</label>
+                            <textarea name="description-info" id="description-info" cols="30" rows="5"
+                                placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
                     </fieldset>
 
 

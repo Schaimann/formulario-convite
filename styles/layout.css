@@ -12,8 +12,10 @@ main {
 
     & .main-container {
         background-color: var(--input-base);
-        max-width: 23rem;
-        margin-left: auto;
+        width: 820px;
+        height: 1980px;
+        padding: 2rem;
+        border-radius: 1rem;
     }
 }
 
