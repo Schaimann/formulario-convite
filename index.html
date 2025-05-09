@@ -5,15 +5,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Convite</title>
-
     <link rel="stylesheet" href="styles/index.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -35,8 +42,9 @@
 
                 <form>
                     <fieldset class="about-event">
-                        <img src="images/svg/calendar.svg" alt="imagem de calendario">
-                        Sobre o evento
+                        <legend>
+                            <img src="images/svg/calendar.svg" alt="imagem de calendario">
+                            Sobre o evento</legend>
 
                         <div class="input-wrapper">
                             <label for="name-event">Título</label>
@@ -53,29 +61,42 @@
                             <input type="datetime-local" id="end-event" name="end-event">
                         </div>
 
-                        <div class="select-wrapper">
-                            <label for="local">Tipo</label>
-                            <select name="local" id="local">
-                                <option value="in-person">Presencial</option>
-                                <option value="Online">Online</option>
-                            </select>
-                        </div>
+                        <div class="local-wrapper">
+                            <label for="local-inner">Tipo</label>
+                            <div class="local-inner">
+                                <div class="radio-local">
 
-                        <div class="input-wrapper">
-                            <label for="adress">Local</label>
-                            <input type="text" id="adress" name="adress" placeholder="Link ou endereço">
-                        </div>
+                                    <label for="in-person">
+                                        <input type="radio" name="in-person" value="in-person" id="in-person">
+                                        <img src="images/svg/building-2.svg" alt="imagem de predio">
+                                        <span>Presencial</span>
+                                    </label>
 
-                        <div class="textarea-wrapper">
-                            <label for="description-info">Descrição</label>
-                            <textarea name="description-info" id="description-info" cols="30" rows="5"
-                                placeholder="Escreva sobre os detalhes do evento"></textarea>
-                        </div>
+                                    <label for="online">
+                                        <input type="radio" name="online" value="online" id="online">
+                                        <img src="images/svg/video.svg" alt="imagem de camera">
+                                        <span>Online</span>
+                                    </label>
+
+                                </div>
+                            </div>
+                            <!--Teste!-->
+                            <div class="input-wrapper">
+                                <label for="adress">Local</label>
+                                <input type="text" id="adress" name="adress" placeholder="Link ou endereço">
+                            </div>
+
+                            <div class="textarea-wrapper">
+                                <label for="description-info">Descrição</label>
+                                <textarea name="description-info" id="description-info" cols="30" rows="5"
+                                    placeholder="Escreva sobre os detalhes do evento"></textarea>
+                            </div>
                     </fieldset>
 
 
                     <fieldset class="custom-event">
-                        <img src="images/svg/paintbrush-vertical.svg" alt="imagem de pincel">Personalização
+                        <legend><img src="images/svg/paintbrush-vertical.svg" alt="imagem de pincel">Personalização
+                        </legend>
 
                         <div class="radio-wrapper">
                             <div class="radio-inner">
