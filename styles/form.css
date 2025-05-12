@@ -1,13 +1,13 @@
 @import url(fields/index.css);
 form{
-    margin-top: 5rem;
+    margin-top: 2.5rem;
 }
 
 fieldset{
     border: none;
 
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 legend{
@@ -25,61 +25,15 @@ legend{
     }
     & .textarea-wrapper{
         display: flex;
-        align-items: center;
+        flex-direction: column;
         gap: 1rem;
         grid-column: 1 / -1;
+        color: red;
+
+
+        & textarea{
+            background: var(--shape-background);
+            color: var(--text-heading);
+        }
     }
-}
-.select-wrapper{
-    border-radius: 1rem;
-}
-
-.option-buttons {
-  display: flex;
-  width: 100%;
-  height: 50px;
-  background-color: var(--shape-background);
-  border: 1px solid var(--input-stroke);
-  border-radius: 0.5rem;
-}
-
-.radio-option {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.1rem;
-    height: 100%;
-    width: 100%;
-    border-radius: 0.5rem;
-    padding: 0.9rem 1.9rem;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    background-color: var(--shape-background);
-}
-
-.radio-option input[type="radio"] {
-    opacity: 0;
-    inset: 0;
-    z-index: -1;
-}
-
-.radio-option img{
-    width: 20px;
-    height: 20px;
-    gap: 0.5rem;
-}
-
-.radio-option span {
-    display: flex;
-    font-size: 0.95rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.radio-option:hover {
-    background-color: #2c2c2c;
-}
-label:has(input[type="radio"]:checked) {
-  color: var(--brand-light);
-  transform: scale(0.9);
 }
