@@ -78,3 +78,67 @@ input[type="date"] {
     transform: scale(0.92);
     border-radius: .5rem;
 }
+
+
+/* custom-event */
+
+.radio-wrapper{
+    display: flex;
+    gap: 10px;
+    
+    & input{
+        display: none;
+    }
+    & .radio-inner:nth-child(4){
+        border: 2px solid var(--brand-light);
+    }
+}
+.radio-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--shape-button);
+    border-radius: 2rem;
+    cursor: pointer;
+    
+}
+.radio-color{
+    width: 28px;
+    height: 28px;
+    border-radius: 2rem;
+}
+.radio-inner:nth-child(1) .radio-color {
+  background-color: var(--brand-light);
+}
+.radio-inner:nth-child(2) .radio-color {
+  background-color: var(--navy);
+}
+.radio-inner:nth-child(3) .radio-color {
+  background-color: var(--purple);
+}
+.radio-inner:nth-child(4) .radio-color {
+  background-color: var(--fuschia);
+}
+.radio-inner:nth-child(5) .radio-color {
+  background-color: var(--pink);
+}
+.radio-inner:nth-child(6) .radio-color {
+  background-color: var(--danger);
+}
+.radio-inner:nth-child(7) .radio-color {
+  background-color: var(--orange);
+}
+.radio-inner:nth-child(8) .radio-color {
+  background-color: var(--yellow);
+}
+.radio-inner:nth-child(9) .radio-color {
+  background-color: var(--lime);
+}
+.radio-inner:nth-child(10) .radio-color {
+  background-color: var(--green);
+}
+.radio-inner:nth-child(11) .radio-color {
+  background-color: var(--cyan);
+}
