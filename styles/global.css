@@ -66,3 +66,7 @@
    --body-sm: 600 14px/145% var(--font-family);
    --body-xs: 600 12px/145% var(--font-family);
  }
+
+ .flex{
+  display: flex;
+ }

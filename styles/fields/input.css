@@ -155,3 +155,24 @@ input[type="date"] {
 .radio-inner:nth-child(11) .radio-color {
   background-color: var(--cyan);
 }
+
+
+/* CONTACT EVENT */
+.contact-wrapper{
+  width: 100%;
+}
+.contacts .flex{
+  gap: 1rem;
+}
+.contacts legend{
+  display: flex;
+  font: var(--heading-sm);
+  color: var(--text-heading);
+  align-items: center;
+  gap: 0.75rem;
+
+  & > img{
+    width: 24px;
+    height: 24px;
+  }
+}

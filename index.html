@@ -273,19 +273,55 @@
 
                         <div class="contact-wrapper">
                             <label for="contacts">Nome</label>
-                            <input type="text" name="contacts" id="contacts">
+                            <input type="text" name="contacts" id="contacts" placeholder="Nome completo">
                         </div>
+                        <div class="flex">
+                            <div class="contact-wrapper">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+                                <div class="error">
+                                    <img src="images/svg/circle-alert (1).svg" alt="Imagem de alerta">
+                                    <span>Campo obrigatório</span>
+                                </div>
+                            </div>
 
-                        <div class="contact-wrapper">
-                            <label for="contacts">E-mail</label>
-                            <input type="text" name="contacts" id="contacts">
-                        </div>
-
-                        <div class="contact-wrapper">
-                            <label for="contacts">Telefone</label>
-                            <input type="text" name="contacts" id="contacts">
+                            <div class="contact-wrapper">
+                                <label for="phone">Telefone</label>
+                                <input type="text" naphoneme="phone" id="phone" placeholder="(99) 99999-9999">
+                            </div>
                         </div>
                     </fieldset>
+                    <div class="terms-wrapper checkbox-wrapper">
+
+                        <div class="terms-inner">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms" id="terms">
+                        </div>
+
+                        <label for="terms">
+                            Li e concordo com os str <u style="color: var(--brand-light);">Termos e Condições</u> e com
+                            a <u style="color: var(--brand-light);">Política de Privacidade</u>
+                        </label>
+
+                        <div class="terms-inner">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms-mail" id="terms-mail">
+                        </div>
+                        <label for="terms-mail">
+                            Aceito receber atualizações e promoções por e-mail
+                        </label>
+
+                        <div class="terms-inner">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms-sms" id="terms-sms">
+                        </div>
+                        <label for="terms-sms">
+                            Aceito receber atualizações e promoções por SMS
+                        </label>
+                    </div>
+
+
+                    
                 </form>
             </div>
         </main>

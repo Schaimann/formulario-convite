@@ -1,3 +1,39 @@
 @import url(input.css);
 @import url(selecarea.css);
 @import url(radio.css);
+@import url(checkbox.css);
+
+input{
+    &[disabled] {
+        background-color: var(--shape-background);
+
+        border: 1px solid var(--shape-background);
+
+        color: var(--text-body);
+    }
+
+    &:invalid{
+        border: 0.125rem solid var(--danger);
+    }
+    &[required] + .error{
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        font: var(--body-xs);
+        color: var(--danger);
+
+        margin-top: .25rem;
+    }
+
+    &:not(:focus):valid + .error{
+        display: none;
+    }
+}
+fieldset{
+    padding-bottom: 3rem;
+}
+
+.terms-wrapper{
+    border-top: 1px solid var(--input-stroke);
+}
