@@ -12,7 +12,7 @@ main {
 
     & .main-container {
         background-color: var(--input-base);
-        width: auto;
+        width: 820px;
         padding: 0 8.1rem;
         border-radius: 1rem;
 
@@ -38,24 +38,21 @@ main {
 
 
 aside {
-    padding: 1rem 0 1rem 1rem;
     display: flex; 
     justify-content: end;
+    max-width: 25rem;
+    max-height: 45rem;
+    padding: 1rem 0 1rem 1rem;
     background-color: var(--shape-background);
-    align-items: center;
-    & .aside-container {
-        max-width: 21rem;
-        position: relative;
-        background-color: var(--input-base);
-        max-width: 24rem;
-        padding: 2rem;
 
+    & .aside-container {
+        background-color: var(--input-base);
+        padding: 2rem;
         background-image: url('/images/Background.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         border-radius: 20px;
-        min-height: 550px;
 
 
     & img {
