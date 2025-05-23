@@ -1,6 +1,7 @@
 #app {
-    display: grid;
-    grid-template-columns: 31.25% 68.75%;
+    display: flex;
+    justify-content: center;
+    
 
     height: 100vh;
     overflow: hidden;
@@ -39,13 +40,15 @@ main {
 
 aside {
     display: flex; 
-    justify-content: end;
+    justify-content: flex-end;
     max-width: 25rem;
     max-height: 45rem;
     padding: 1rem 0 1rem 1rem;
     background-color: var(--shape-background);
 
     & .aside-container {
+        
+
         background-color: var(--input-base);
         padding: 2rem;
         background-image: url('/images/Background.png');
